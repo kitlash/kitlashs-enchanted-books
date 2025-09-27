@@ -1,0 +1,858 @@
+{"model": {
+	"type": "minecraft:select",
+	"property": "minecraft:component",
+	"component": "minecraft:stored_enchantments",
+	"cases": [
+		{"when": {
+			"minecraft:binding_curse": 1
+		}, "model": {
+			"type": "minecraft:model",
+			"model": "minecraft:item/binding_curse"
+		}},
+		{"when": {
+			"minecraft:vanishing_curse": 1
+		}, "model": {
+			"type": "minecraft:model",
+			"model": "minecraft:item/vanishing_curse"
+		}}
+	],
+	"fallback": {
+		"type": "minecraft:condition",
+		"property": "minecraft:component",
+		"predicate": "minecraft:stored_enchantments",
+		"value": [{
+			"enchantments": "minecraft:binding_curse",
+			"levels": 1
+		}],
+		"on_true": {
+			"type": "minecraft:model",
+			"model": "minecraft:item/binding_curse_max"
+		},
+		"on_false": {
+			"type": "minecraft:condition",
+			"property": "minecraft:component",
+			"predicate": "minecraft:stored_enchantments",
+			"value": [{
+				"enchantments": "minecraft:vanishing_curse",
+				"levels": 1
+			}],
+			"on_true": {
+				"type": "minecraft:model",
+				"model": "minecraft:item/vanishing_curse_max"
+			},
+			"on_false": {
+				"type": "minecraft:select",
+				"property": "minecraft:component",
+				"component": "minecraft:stored_enchantments",
+				"cases": [
+					{"when": {
+						"minecraft:aqua_affinity": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/aqua_affinity"
+					}},
+					{"when": {
+						"minecraft:bane_of_arthropods": 5
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/bane_of_arthropods_max"
+					}},
+					{ "when": {
+						"minecraft:breach": 4
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/breach_max"
+					}},
+					{"when": {
+						"minecraft:blast_protection": 4
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/blast_protection_max"
+					}},
+					{"when": {
+						"minecraft:channeling": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/channeling"
+					}},
+					{"when": {
+						"minecraft:density": 5
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/density_max"
+					}},
+					{"when": {
+						"minecraft:depth_strider": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/depth_strider_max"
+					}},
+					{"when": {
+						"minecraft:efficiency": 5
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/efficiency_max"
+					}},
+					{"when": {
+						"minecraft:feather_falling": 4
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/feather_falling_max"
+					}},
+					{"when": {
+						"minecraft:fire_aspect": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/fire_aspect_max"
+					}},
+					{"when": {
+						"minecraft:fire_protection": 4
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/fire_protection_max"
+					}},
+					{"when": {
+						"minecraft:flame": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/flame"
+					}},
+					{"when": {
+						"minecraft:fortune": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/fortune_max"
+					}},
+					{"when": {
+						"minecraft:frost_walker": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/frost_walker_max"
+					}},
+					{"when": {
+						"minecraft:impaling": 5
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/impaling_max"
+					}},
+					{"when": {
+						"minecraft:infinity": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/infinity"
+					}},
+					{"when": {
+						"minecraft:knockback": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/knockback_max"
+					}},
+					{"when": {
+						"minecraft:looting": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/looting_max"
+					}},
+					{"when": {
+						"minecraft:loyalty": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/loyalty_max"
+					}},
+					{"when": {
+						"minecraft:luck_of_the_sea": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/luck_of_the_sea_max"
+					}},
+					{"when": {
+						"minecraft:lure": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/lure_max"
+					}},
+					{"when": {
+						"minecraft:mending": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/mending"
+					}},
+					{"when": {
+						"minecraft:multishot": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/multishot"
+					}},
+					{"when": {
+						"minecraft:piercing": 4
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/piercing_max"
+					}},
+					{"when": {
+						"minecraft:power": 5
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/power_max"
+					}},
+					{"when": {
+						"minecraft:projectile_protection": 4
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/projectile_protection_max"
+					}},
+					{"when": {
+						"minecraft:protection": 4
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/protection_max"
+					}},
+					{"when": {
+						"minecraft:punch": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/punch_max"
+					}},
+					{"when": {
+						"minecraft:quick_charge": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/quick_charge_max"
+					}},
+					{"when": {
+						"minecraft:respiration": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/respiration_max"
+					}},
+					{"when": {
+						"minecraft:riptide": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/riptide_max"
+					}},
+					{"when": {
+						"minecraft:sharpness": 5
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/sharpness_max"
+					}},
+					{"when": {
+						"minecraft:silk_touch": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/silk_touch"
+					}},
+					{"when": {
+						"minecraft:smite": 5
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/smite_max"
+					}},
+					{"when": {
+						"minecraft:soul_speed": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/soul_speed_max"
+					}},
+					{"when": {
+						"minecraft:sweeping_edge": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/sweeping_edge_max"
+					}},
+					{"when": {
+						"minecraft:swift_sneak": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/swift_sneak_max"
+					}},
+					{"when": {
+						"minecraft:thorns": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/thorns_max"
+					}},
+					{"when": {
+						"minecraft:unbreaking": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/unbreaking_max"
+					}},
+					{"when": {
+						"minecraft:wind_burst": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/wind_burst_max"
+					}},
+					{"when": {
+						"minecraft:bane_of_arthropods": 4
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/bane_of_arthropods"
+					}},
+					{"when": {
+						"minecraft:bane_of_arthropods": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/bane_of_arthropods"
+					}},
+					{"when": {
+						"minecraft:bane_of_arthropods": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/bane_of_arthropods"
+					}},
+					{"when": {
+						"minecraft:bane_of_arthropods": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/bane_of_arthropods"
+					}},
+
+
+					{"when": {
+						"minecraft:blast_protection": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/blast_protection"
+					}},
+					{"when": {
+						"minecraft:blast_protection": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/blast_protection"
+					}},
+					{"when": {
+						"minecraft:blast_protection": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/blast_protection"
+					}},
+					
+
+					{"when": {
+						"minecraft:breach": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/breach"
+					}},
+					{"when": {
+						"minecraft:breach": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/breach"
+					}},
+					{"when": {
+						"minecraft:breach": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/breach"
+					}},
+					
+
+					{"when": {
+						"minecraft:density": 4
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/density"
+					}},
+					{"when": {
+						"minecraft:density": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/density"
+					}},
+					{"when": {
+						"minecraft:density": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/density"
+					}},
+					{"when": {
+						"minecraft:density": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/density"
+					}},
+					
+
+					{"when": {
+						"minecraft:depth_strider": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/depth_strider"
+					}},
+					{"when": {
+						"minecraft:depth_strider": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/depth_strider"
+					}},
+					
+
+					{"when": {
+						"minecraft:efficiency": 4
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/efficiency"
+					}},
+					{"when": {
+						"minecraft:efficiency": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/efficiency"
+					}},
+					{"when": {
+						"minecraft:efficiency": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/efficiency"
+					}},
+					{"when": {
+						"minecraft:efficiency": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/efficiency"
+					}},
+					
+
+					{"when": {
+						"minecraft:feather_falling": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/feather_falling"
+					}},
+					{"when": {
+						"minecraft:feather_falling": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/feather_falling"
+					}},
+					{"when": {
+						"minecraft:feather_falling": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/feather_falling"
+					}},
+					
+
+					{"when": {
+						"minecraft:fire_aspect": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/fire_aspect"
+					}},
+					
+
+					{"when": {
+						"minecraft:fire_protection": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/fire_protection"
+					}},
+					{"when": {
+						"minecraft:fire_protection": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/fire_protection"
+					}},
+					{"when": {
+						"minecraft:fire_protection": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/fire_protection"
+					}},
+					
+
+					{"when": {
+						"minecraft:fortune": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/fortune"
+					}},
+					{"when": {
+						"minecraft:fortune": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/fortune"
+					}},
+					
+
+					{"when": {
+						"minecraft:frost_walker": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/frost_walker"
+					}},
+					
+
+					{"when": {
+						"minecraft:impaling": 4
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/impaling"
+					}},
+					{"when": {
+						"minecraft:impaling": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/impaling"
+					}},
+					{"when": {
+						"minecraft:impaling": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/impaling"
+					}},
+					{"when": {
+						"minecraft:impaling": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/impaling"
+					}},
+					
+
+					{"when": {
+						"minecraft:knockback": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/knockback"
+					}},
+					
+
+					{"when": {
+						"minecraft:looting": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/looting"
+					}},
+					{"when": {
+						"minecraft:looting": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/looting"
+					}},
+					
+
+					{"when": {
+						"minecraft:loyalty": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/loyalty"
+					}},
+					{"when": {
+						"minecraft:loyalty": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/loyalty"
+					}},
+					
+
+					{"when": {
+						"minecraft:luck_of_the_sea": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/luck_of_the_sea"
+					}},
+					{"when": {
+						"minecraft:luck_of_the_sea": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/luck_of_the_sea"
+					}},
+					
+
+					{"when": {
+						"minecraft:lure": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/lure"
+					}},
+					{"when": {
+						"minecraft:lure": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/lure"
+					}},
+					
+
+					{"when": {
+						"minecraft:piercing": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/piercing"
+					}},
+					{"when": {
+						"minecraft:piercing": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/piercing"
+					}},
+					{"when": {
+						"minecraft:piercing": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/piercing"
+					}},
+					
+
+					{"when": {
+						"minecraft:power": 4
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/power"
+					}},
+					{"when": {
+						"minecraft:power": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/power"
+					}},
+					{"when": {
+						"minecraft:power": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/power"
+					}},
+					{"when": {
+						"minecraft:power": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/power"
+					}},
+					
+
+					{"when": {
+						"minecraft:projectile_protection": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/projectile_protection"
+					}},
+					{"when": {
+						"minecraft:projectile_protection": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/projectile_protection"
+					}},
+					{"when": {
+						"minecraft:projectile_protection": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/projectile_protection"
+					}},
+					
+
+					{"when": {
+						"minecraft:protection": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/protection"
+					}},
+					{"when": {
+						"minecraft:protection": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/protection"
+					}},
+					{"when": {
+						"minecraft:protection": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/protection"
+					}},
+					
+
+					{"when": {
+						"minecraft:punch": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/punch"
+					}},
+					
+
+					{"when": {
+						"minecraft:quick_charge": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/quick_charge"
+					}},
+					{"when": {
+						"minecraft:quick_charge": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/quick_charge"
+					}},
+					
+
+					{"when": {
+						"minecraft:respiration": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/respiration"
+					}},
+					{"when": {
+						"minecraft:respiration": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/respiration"
+					}},
+					
+
+					{"when": {
+						"minecraft:riptide": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/riptide"
+					}},
+					{"when": {
+						"minecraft:riptide": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/riptide"
+					}},
+					
+
+					{"when": {
+						"minecraft:sharpness": 4
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/sharpness"
+					}},
+					{"when": {
+						"minecraft:sharpness": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/sharpness"
+					}},
+					{"when": {
+						"minecraft:sharpness": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/sharpness"
+					}},
+					{"when": {
+						"minecraft:sharpness": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/sharpness"
+					}},
+					
+
+					{"when": {
+						"minecraft:smite": 4
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/smite"
+					}},
+					{"when": {
+						"minecraft:smite": 3
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/smite"
+					}},
+					{"when": {
+						"minecraft:smite": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/smite"
+					}},
+					{"when": {
+						"minecraft:smite": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/smite"
+					}},
+					
+
+					{"when": {
+						"minecraft:soul_speed": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/soul_speed"
+					}},
+					{"when": {
+						"minecraft:soul_speed": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/soul_speed"
+					}},
+					
+
+					{"when": {
+						"minecraft:sweeping_edge": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/sweeping_edge"
+					}},
+					{"when": {
+						"minecraft:sweeping_edge": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/sweeping_edge"
+					}},
+					
+
+					{"when": {
+						"minecraft:swift_sneak": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/swift_sneak"
+					}},
+					{"when": {
+						"minecraft:swift_sneak": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/swift_sneak"
+					}},
+					
+
+					{"when": {
+						"minecraft:thorns": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/thorns"
+					}},
+					{"when": {
+						"minecraft:thorns": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/thorns"
+					}},
+					
+
+					{"when": {
+						"minecraft:unbreaking": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/unbreaking"
+					}},
+					{"when": {
+						"minecraft:unbreaking": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/unbreaking"
+					}},
+					
+
+					{"when": {
+						"minecraft:wind_burst": 2
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/wind_burst"
+					}},
+					{"when": {
+						"minecraft:wind_burst": 1
+					}, "model": {
+						"type": "minecraft:model",
+						"model": "minecraft:item/wind_burst"
+					}}
+				],
+				"fallback": {
+					"type": "minecraft:model",
+					"model": "minecraft:item/enchanted_book"
+				}
+			}
+		}
+	}
+}}
